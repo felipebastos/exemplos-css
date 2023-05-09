@@ -36,43 +36,58 @@
             0% {
                 background-image: linear-gradient(red, yellow);
                 transform: rotate(0deg);
+                width: 40%;
+                height: 40%;
             }
 
             25% {
                 background-image: linear-gradient(yellow, orange);
                 transform: rotate(90deg);
+                width: 50%;
+                height: 50%;
             }
 
             50% {
                 background-image: linear-gradient(orange, blue);
                 transform: rotate(180deg);
+                width: 40%;
+                height: 40%;
             }
 
             75% {
                 background-image: linear-gradient(blue, red);
                 transform: rotate(270deg);
+                width: 50%;
+                height: 50%;
             }
 
             100% {
                 background-image: linear-gradient(red, yellow);
                 transform: rotate(360deg);
+                width: 40%;
+                height: 40%;
             }
         }
 
         img {
             width: 40%;
+            border-radius: 20%;
+        }
+
+        .texto {
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
     </style>
 </head>
 
 <body>
     <div class="caixa">
-        Você consegue!
+        <span class="texto">Você consegue!</span>
         <div class="foto">
             <img src="https://yt3.ggpht.com/ytc/AMLnZu8mTC1axTSxLDdX0xvJFoEnsoixr4555CXOxH3isw=s900-c-k-c0x00ffffff-no-rj"
                 alt="">
         </div>
-        Nunca desista!
+        <span class="texto">Não desista!</span>
     </div>
 </body>
 
