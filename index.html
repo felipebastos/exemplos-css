@@ -13,29 +13,67 @@
         }
 
         div.caixa {
-            background-color: yellow;
+            background-image: linear-gradient(red, yellow);
             border: orange;
             border-radius: 20px;
-            width: 200px;
-            height: 200px;
-            animation: anima 2s;
+            width: 40%;
+            height: 40%;
+            animation: anima 5s;
             animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            position: absolute;
+            left: 30%;
+            top: 30%;
+
+            text-align: center;
+
+            color: white;
+            padding: 20px;
         }
 
         @keyframes anima {
-            from {
-                background-color: yellow;
+            0% {
+                background-image: linear-gradient(red, yellow);
+                transform: rotate(0deg);
             }
 
-            to {
-                background-color: red;
+            25% {
+                background-image: linear-gradient(yellow, orange);
+                transform: rotate(90deg);
             }
+
+            50% {
+                background-image: linear-gradient(orange, blue);
+                transform: rotate(180deg);
+            }
+
+            75% {
+                background-image: linear-gradient(blue, red);
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background-image: linear-gradient(red, yellow);
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            width: 40%;
         }
     </style>
 </head>
 
 <body>
-    <div class="caixa"></div>
+    <div class="caixa">
+        Você consegue!
+        <div class="foto">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu8mTC1axTSxLDdX0xvJFoEnsoixr4555CXOxH3isw=s900-c-k-c0x00ffffff-no-rj"
+                alt="">
+        </div>
+        Nunca desista!
+    </div>
 </body>
 
 </html>
