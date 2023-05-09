@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,27 +9,69 @@
 
     <style>
         body {
-            background-color: darkgray;
+            animation: fundo 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes fundo {
+            0% {
+                background-color: rgba(169, 169, 169, 0.1);
+            }
+
+            50% {
+                background-color: gray;
+            }
+
+            100% {
+                background-color: rgba(169, 169, 169, 0.1);
+            }
         }
 
         div.caixa {
             background-image: linear-gradient(red, yellow);
             border: orange;
             border-radius: 20px;
-            width: 40%;
+            width: 30%;
             height: 40%;
             animation: anima 5s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
 
             position: absolute;
-            left: 30%;
+            left: 5%;
             top: 30%;
 
-            text-align: center;
+            color: white;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.caixa-inverso {
+            background-image: linear-gradient(red, yellow);
+            border: orange;
+            border-radius: 20px;
+            width: 30%;
+            height: 40%;
+            animation: anima-inverso 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            position: absolute;
+            left: 50%;
+            top: 30%;
 
             color: white;
-            padding: 20px;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         @keyframes anima {
@@ -69,6 +111,43 @@
             }
         }
 
+        @keyframes anima-inverso {
+            100% {
+                background-image: linear-gradient(red, yellow);
+                transform: rotate(0deg);
+                width: 40%;
+                height: 40%;
+            }
+
+            75% {
+                background-image: linear-gradient(yellow, orange);
+                transform: rotate(90deg);
+                width: 50%;
+                height: 50%;
+            }
+
+            50% {
+                background-image: linear-gradient(orange, blue);
+                transform: rotate(180deg);
+                width: 40%;
+                height: 40%;
+            }
+
+            25% {
+                background-image: linear-gradient(blue, red);
+                transform: rotate(270deg);
+                width: 50%;
+                height: 50%;
+            }
+
+            0% {
+                background-image: linear-gradient(red, yellow);
+                transform: rotate(360deg);
+                width: 40%;
+                height: 40%;
+            }
+        }
+
         img {
             width: 40%;
             border-radius: 20%;
@@ -81,13 +160,24 @@
 </head>
 
 <body>
-    <div class="caixa">
-        <span class="texto">Você consegue!</span>
-        <div class="foto">
+    <div class="caixas">
+        <div class="caixa">
+            <div class="texto">Você consegue!</div>
+
             <img src="https://yt3.ggpht.com/ytc/AMLnZu8mTC1axTSxLDdX0xvJFoEnsoixr4555CXOxH3isw=s900-c-k-c0x00ffffff-no-rj"
                 alt="">
+
+            <div class="texto">Não desista!</div>
         </div>
-        <span class="texto">Não desista!</span>
+
+        <div class="caixa-inverso">
+            <div class="texto">Vá em frente!</div>
+
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu8mTC1axTSxLDdX0xvJFoEnsoixr4555CXOxH3isw=s900-c-k-c0x00ffffff-no-rj"
+                alt="">
+
+            <div class="texto">Vai dar certo!</div>
+        </div>
     </div>
 </body>
 
