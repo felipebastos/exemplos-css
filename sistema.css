@@ -13,8 +13,12 @@ body {
     height: 100px;
     margin: -50px 0 0 -50px;
     border-radius: 50%;
-    background: #ffcc00;
+    background-image: url("https://www.infoescola.com/wp-content/uploads/2013/08/sol-600x600.jpg");
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: -10px -10px;
     animation: rotateSun 10s linear infinite;
+    box-shadow: 0 0 400px rgba(255,0,0,0.9);
   }
   
   /* Mercurio */
@@ -25,7 +29,10 @@ body {
     width: 15px;
     height: 15px;
     margin: -7.5px 0 0 -7.5px;
-    background: #e5e4e2;
+    background-image: url("http://s2.glbimg.com/BgWxSZbymvV_HhJaGOTQqMWHGZn2-TkZ9LdOdYB9vrBIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2013/02/21/mercurio.jpg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
     border-radius: 50%;
     animation: rotateMercury 4s linear infinite;
   }
@@ -38,20 +45,28 @@ body {
     width: 25px;
     height: 25px;
     margin: -12.5px 0 0 -12.5px;
-    background: #f5deb3;
+    background-image: url("https://conteudo.imguol.com.br/c/noticias/81/2022/02/11/venus-1644601700247_v2_900x506.jpg");
+    background-repeat: no-repeat;
+    background-size: 60px 30px;
+    background-position: -15px -1px;
     border-radius: 50%;
     animation: rotateVenus 6s linear infinite;
   }
   
   /* Terra */
   .earth {
+    background-image: url("https://img.olhardigital.com.br/wp-content/uploads/2022/12/Terra.jpg");
+    background-size: 56px 36px;
+    background-repeat: no-repeat;
+    background-position: -13px -2px;
+
     position: absolute;
     top: 50%;
     left: 50%;
     width: 30px;
     height: 30px;
     margin: -15px 0 0 -15px;
-    background: #1e90ff;
+    /*background: #1e90ff;*/
     border-radius: 50%;
     animation: rotateEarth 8s linear infinite;
   }
@@ -77,7 +92,10 @@ body {
     width: 20px;
     height: 20px;
     margin: -10px 0 0 -10px;
-    background: #ff6347;
+    background-image: url("https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/8465a67d00eda6b73b4485921e5fac7a.jpg");
+    background-repeat: no-repeat;
+    background-size: 35px 25px;
+    background-position: -7px -3px;
     border-radius: 50%;
     animation: rotateMars 10s linear infinite;
   }
