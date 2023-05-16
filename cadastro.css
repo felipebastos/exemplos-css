@@ -1,0 +1,38 @@
+div.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+
+    border-radius: 20px;
+    box-shadow: 7px 7px rgba(123, 121, 121, 0.2);
+    border-top: 2px solid blueviolet;
+}
+
+div.cadastro > button {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: blueviolet;
+    color: white;
+    width: 50%;
+}
+
+.clique:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+div.cadastro > input {
+    width: 80%;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+div.cadastro > input:hover {
+    border: 1px solid purple;
+}
